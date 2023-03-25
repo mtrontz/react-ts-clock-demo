@@ -1,0 +1,94 @@
+.main {
+  height: 100vh;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: black;
+  text-align: center;
+  -webkit-animation: Animation 60s ease infinite;
+  -moz-animation: Animation 60s ease infinite;
+  animation: Animation 60s ease infinite;
+  background-size: 300% 300% !important;
+}
+
+@-webkit-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@-moz-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+.group {
+  position: absolute;
+  top: 10%;
+  width: fit-content;
+}
+
+.group button {
+  border: none;
+  font-size: large;
+}
+
+.background-changer-button-group {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: fit-content;
+}
+
+.color-menu {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 50vh;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.color-menu .btn {
+  height: 50px;
+  width: 50px;
+  border: none;
+  margin: 0.25rem;
+}
+
+.dropdown button {
+  border: none;
+}
+.dropdown-menu.show {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+}
