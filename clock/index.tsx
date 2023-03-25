@@ -148,7 +148,7 @@ export const BackgroundChanger: FC<Gradients> = ({
                 ></Button>
               );
             })}
-            <Container style={{background: bg.background}}>
+            <Container style={{background: bg.color}}>
               {children}
             </Container>
           </Row>
